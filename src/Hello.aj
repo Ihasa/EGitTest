@@ -25,6 +25,9 @@ public aspect Hello {
 	before () : yey8(){
 		System.out.print("hello, ");
 	}
+	after () : yey8(){
+		System.out.println("-------------------------");
+	}
 	
 	/*after (Foo f) : this(Main) && target(f) && execution(void foo()){
 		System.out.println("hehehe");
